@@ -5,16 +5,11 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.Toast;
-
 
 import com.brain.deepak.turbosupper.BuildConfig;
 import com.brain.deepak.turbosupper.R;
@@ -68,6 +63,7 @@ public class DebugSelectActivity extends AppCompatActivity {
             LinearLayout list = findViewById(R.id.debugSelect_buttonList);
             for (final String name : classNames) {
                 Button button = new Button(this);
+                button.setTransformationMethod(null);
                 list.addView(button);
                 button.setText(name);
                 button.setOnClickListener(new View.OnClickListener() {
