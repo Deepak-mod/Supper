@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.brain.deepak.turbosupper.R;
+
 public class TestBottomNavigationActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
