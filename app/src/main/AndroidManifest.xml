@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.TestBottomNavigationActivity"
+            android:label="@string/title_activity_test_bottom_navigation" />
+        <activity android:name=".activities.debug.DebugSelectActivity"></activity>
     </application>
 
 </manifest>
